@@ -1,0 +1,133 @@
+.join-section {
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.join-form {
+    gap: 1rem;
+    height: calc(100% - 19rem);
+}
+
+.join-list {
+    width: 30rem;
+    height: 5rem;
+    background: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.join-icon {
+    width: 5rem;
+    height: 100%;
+    border-right: 1.5px solid #d9d9d9;
+}
+
+.email-icon {
+    background-image: url('../icons/icon-email.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+.security-icon {
+    background-image: url('../icons/icon-security.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%; 
+}
+
+.password-icon {
+    background-image: url('../icons/icon-password.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+.password-check-icon {
+    background-image: url('../icons/icon-password-check.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+.profile-icon {
+    background-image: url('../icons/icon-profile.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+.phone-icon {
+    background-image: url('../icons/icon-phone.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+.birth-icon {
+    background-image: url('../icons/icon-birth.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+.join-input-container {
+    width: calc(100% - 5rem);
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.join-input {
+    width: calc(100% - 7rem);
+    height: 100%;
+    font-size: 1.2rem;
+}
+
+.input-btn {
+    width: 4rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    background: #eee;
+}
+
+.password-input {
+    width: 12rem;
+}
+
+.password-error {
+    width: 30rem;
+    padding-left: 6rem;
+    color: #a9a9a9;
+    font-size: 1rem;
+    margin-top: -1rem;
+}
+
+.input-btn:hover {
+    background: #d9d9d9;
+}
+
+.input-btn:disabled {
+    background-color: #eee;
+    cursor: not-allowed;
+}
+
+.join-form > .submit-btn {
+    margin-top: 1rem;
+    height: 4rem;
+}
+
+.error-message {
+    width: 30rem;
+    padding-left: 6rem;
+    color: #ff2e00;
+    font-size: 1rem;
+    margin-top: -1rem;
+}

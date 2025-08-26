@@ -1,0 +1,36 @@
+.captcha-box {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.captcha-canvas {
+    width: 20rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.captcha {
+    border-radius: 0.5rem;
+    background: #333;
+}
+
+.reset-btn {
+    width: 5rem;
+    height: 5rem;
+    background-image: url("../icons/icon-reset.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+
+.captcha-input {
+    width: 20rem;
+    height: 5rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+}

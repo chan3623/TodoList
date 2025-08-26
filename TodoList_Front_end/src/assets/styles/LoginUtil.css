@@ -1,0 +1,27 @@
+.title-container {
+  width: 30rem;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title.none {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.title-container a {
+    font-weight: bold;
+}
+
+.util-form {
+  gap: 2rem;
+}
+
+.util-input {
+  width: 20rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}

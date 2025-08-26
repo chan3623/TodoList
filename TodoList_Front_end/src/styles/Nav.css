@@ -1,0 +1,75 @@
+.App-nav {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    height: 7rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem
+}
+
+.App-nav a {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    transition: all .2s linear;
+}
+
+.calendar-btn {
+    background-image: url('../assets/icons/icon-calendar.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+
+.home-btn {
+    background-image: url('../assets/icons/icon-home.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%; 
+}
+
+.category-btn {
+    background-image: url('../assets/icons/icon-category.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+
+.calendar-btn:hover {
+    background-image: url('../assets/icons/icon-calendar-hover.svg'); 
+}
+
+.home-btn:hover {
+    background-image: url('../assets/icons/icon-home-hover.svg'); 
+}
+
+.category-btn:hover {
+    background-image: url('../assets/icons/icon-category-hover.svg'); 
+}
+
+.nav-login-btn {
+    background-image: url('../assets/icons/icon-login.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+
+.nav-login-btn:hover {
+    background-image: url('../assets/icons/icon-login-hover.svg'); 
+}
+
+.nav-logout-btn {
+    width: 5rem;
+    height: 5rem;
+    background-image: url('../assets/icons/icon-logout.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+
+.nav-logout-btn:hover {
+    background-image: url('../assets/icons/icon-logout-hover.svg'); 
+}

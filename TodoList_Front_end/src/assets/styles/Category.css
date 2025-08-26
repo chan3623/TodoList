@@ -1,0 +1,274 @@
+.App-category {
+    justify-content: flex-start;
+}
+
+.category-section {
+    overflow: auto;
+}
+
+.add-category {
+    width: 90%;
+    height: 5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-category-input-box {
+    width: calc(100% - 5rem);
+    height: 100%;
+    font-size: 1.5rem;
+    background: none;
+}
+
+.add-btn {
+    width: 5rem;
+    height: 5rem;
+    background-image: url("../icons/icon-add-btn.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+
+.add-category-input {
+    width: 100%;
+    height: calc( 100% - 0.3rem );
+    font-size: 1.5rem;
+    background: none;
+}
+
+.add-category-input-line {
+    width: 100%;
+    height: 0.35rem;
+    background: #ffb8c9;
+    border-radius: 0.2rem;
+}
+
+.category-ul {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    overflow: auto;
+}
+
+.category-li {
+    width: 100%;
+    position: relative;
+    background: #fff;
+    border-radius: 1rem;
+}
+
+.category-title-box {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+}
+
+.category-title {
+    width: calc( 100% - 10rem );
+    height: 100%;
+    padding :0 2rem;
+    line-height: 5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.category-title-name {
+    height: 100%;
+    font-size: 1.5rem;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.category-todo-list {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: all .2s linear;
+}
+
+.category-todo-list.show {
+    height: auto;
+}
+
+.add-category-list {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.toggle-btn {
+    width: 5rem;
+    height: 100%;
+    background-image: url("../icons/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    transform: rotate(180deg);    
+}
+
+.toggle-btn.expanded {
+    transform: rotate(360deg);
+}
+
+.list-add-btn {
+    width: 5rem;
+    height: 100%;
+    background-image: url("../icons/icon-add-btn.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+}
+
+.add-category-list-input-box {
+    width: calc(100% - 5rem);
+    height: 3rem;
+}
+
+.add-category-list-input {
+    width: 95%;
+    height: calc(100% - 0.3rem);
+    background: none;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+.add-category-list-input-line {
+    width: 95%;
+    height: 0.3rem;
+    background: #ffb8c9;
+}
+
+.edit-btn {
+    width: 5rem;
+    height: 5rem;
+    background-image: url("../icons/icon-edit-btn.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+
+.edit-btn:hover {
+    background-image: url("../icons/icon-edit-btn-hover.svg");
+}
+
+.delete-btn {
+    width: 5rem;
+    height: 5rem;
+    background-image: url("../icons/icon-delete-btn.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+
+.delete-btn:hover {
+    background-image: url("../icons/icon-delete-btn-hover.svg");
+}
+
+.edit-category-input {
+    width: calc(100% - 10rem);
+    height: 5rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+
+.save-btn {
+    width: 5rem;
+    height: 5rem;
+    background-image: url("../icons/icon-update-btn.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+}
+
+.save-btn:hover {
+    background-image: url("../icons/icon-update-btn-hover.svg");
+}
+
+.category-data-ul {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.category-data-li {
+    width: 90%;
+    height: 5rem;
+    display: flex;
+    background: #fee;
+    border-radius: 1rem;
+}
+
+.list-check {
+    display: none;
+}
+
+.list-check-label {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+}
+
+.list-check + .list-check-label {
+    background-image: url("../icons/icon-check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+}
+
+.list-check:checked + .list-check-label {
+    background-image: url("../icons/icon-checked.svg");
+}
+
+.list-edit-btn {
+    width: 5rem;
+    height: 5rem;
+    background-image: url("../icons/icon-edit-btn.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+}
+
+.list-edit-btn:hover {
+    background-image: url("../icons/icon-edit-btn-hover.svg");
+}
+
+.list-delete-btn {
+    width: 5rem;
+    height: 5rem;
+    background-image: url("../icons/icon-delete-btn.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+}
+
+.list-delete-btn:hover {
+    background-image: url("../icons/icon-delete-btn-hover.svg");
+}
+
+.list-item-text, .edit-list-item-input {
+    width: calc(100% - 10rem);
+    height: 100%;
+    line-height: 5rem;
+    padding: 0 2rem;
+    font-size: 1.5rem;
+    overflow: auto;
+    white-space: nowrap;
+}

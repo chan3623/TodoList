@@ -1,0 +1,177 @@
+.App-home {
+    justify-content: space-between;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.day-section {
+    width: 90%;
+    height: 5rem;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.today {
+    width: 100%;
+    height: 100%;
+    line-height: 5rem;
+    text-align: left;
+    font-size: 2.6rem;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+
+.sort-btn {
+    width: 5rem;
+    height: 100%;
+}
+
+.list-section {
+    height: 90%;
+}
+
+.add-todo {
+    width: 90%;
+    height: 5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: 3px solid #ffb8c9; */
+}
+
+.add-btn {
+    width: 5rem;
+    height: 100%;
+    background-image: url("../icons/icon-add-btn.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+
+.add-list-input-box {
+    width: calc(100% - 5rem);
+    height: 100%;
+    font-size: 1.5rem;
+    background: none;
+}
+
+.add-list-input {
+    width: 100%;
+    height: calc( 100% - 0.3rem );
+    font-size: 1.5rem;
+    background: none;
+}
+
+.add-list-input-line {
+    width: 100%;
+    height: 0.35rem;
+    background: #ffb8c9;
+    border-radius: 0.2rem;
+}
+
+.todo-list {
+    width: 90%;
+    height: 80%;
+}
+
+.todo-ul {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.todo-li {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.todo-content {
+    width: calc( 100% - 5rem );
+    display: flex;
+    background: #fefefe;
+    border-radius: 1rem;
+}
+
+.todo-text {
+    width: calc(100% - 10rem);
+    height: 100%;
+    line-height: 5rem;
+    padding: 0 2rem;
+    font-size: 1.5rem;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.list-check {
+    display: none;
+}
+
+.list-check-label {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+}
+
+.list-check + .list-check-label {
+    background-image: url("../icons/icon-check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+
+.list-check:checked + .list-check-label {
+    background-image: url("../icons/icon-checked.svg");
+}
+
+.edit-btn {
+    width: 5rem;
+    height: 5rem;
+    background-image: url("../icons/icon-edit-btn.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+
+.edit-btn:hover {
+    background-image: url("../icons/icon-edit-btn-hover.svg");
+}
+
+.delete-btn {
+    width: 5rem;
+    height: 5rem;
+    background-image: url("../icons/icon-delete-btn.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+
+.delete-btn:hover {
+    background-image: url("../icons/icon-delete-btn-hover.svg");
+}
+
+.edit-list-input {
+    width: calc(100% - 10rem);
+    height: 5rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+
+.save-btn {
+    width: 5rem;
+    height: 5rem;
+    background-image: url("../icons/icon-update-btn.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+.save-btn:hover {
+    background-image: url("../icons/icon-update-btn-hover.svg");
+}

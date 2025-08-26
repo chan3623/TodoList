@@ -1,0 +1,65 @@
+.login-form {
+  gap: 2rem;
+}
+
+.login-input {
+  width: 20rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.login-util {
+  height: 5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-btn {
+  position: relative;
+  display: inline-block;
+  padding: 0 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.login-btn:not(:first-child):before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 1px;
+  height: 13px;
+  background: #333;
+}
+
+/* .social-login-icon {
+  width: 15rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-btn{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.social-btn.google {
+  background-image: url("https://d1nuzc1w51n1es.cloudfront.net/d99d8628713bb69bd142.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.social-btn.kakao {
+  background-image: url("/public/images/kakao.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;  
+} */

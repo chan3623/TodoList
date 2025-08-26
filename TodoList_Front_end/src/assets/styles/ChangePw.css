@@ -1,0 +1,34 @@
+.change-password-form {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.change-password-box {
+    width: 25rem;
+}
+
+.change-password-input {
+    width: 25rem;
+    height: 5rem;
+    border-radius: 0.5rem;
+}
+
+.change-btn {
+    width: 10rem;
+    height: 3rem;
+    background: #FFB8C9;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.password-error-message {
+    width: 25rem;
+    color: #ff2e00;
+    font-size: 1rem;
+}
