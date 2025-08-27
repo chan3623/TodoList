@@ -33,7 +33,7 @@ const TodoModal = (props) => {
             );
             setTodosState(updatedTodos);
 
-            const response = await fetch(`http://kkms4001.iptime.org:33042/todo/dayList/checkUpdate`, {
+            const response = await fetch(`http://15.164.226.28:4000/todo/dayList/checkUpdate`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -82,7 +82,7 @@ const TodoModal = (props) => {
                 'todo': newTodoText
             };
     
-            const response = await fetch('http://kkms4001.iptime.org:33042/todo/dayList/add', {
+            const response = await fetch('http://15.164.226.28:4000/todo/dayList/add', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -139,7 +139,7 @@ const TodoModal = (props) => {
                 'todo': editedText
             };
     
-            const response = await fetch(`http://kkms4001.iptime.org:33042/todo/dayList/update`, {
+            const response = await fetch(`http://15.164.226.28:4000/todo/dayList/update`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -169,7 +169,7 @@ const TodoModal = (props) => {
 
     const deleteTodo = async (id, todoText) => {
         try {
-            const response = await fetch(`http://kkms4001.iptime.org:33042/todo/dayList/delete`, {
+            const response = await fetch(`http://15.164.226.28:4000/todo/dayList/delete`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',

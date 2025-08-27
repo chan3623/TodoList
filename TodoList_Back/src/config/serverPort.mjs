@@ -1,2 +1,2 @@
-const server = {port : 33042};
+const server = {port : 4000};
 export default server;

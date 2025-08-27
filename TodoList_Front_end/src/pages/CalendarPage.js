@@ -32,7 +32,7 @@ const CalendarPage = () => {
 
     const fetchMonthlyData = async () => {
         try {
-            const response = await fetch('http://kkms4001.iptime.org:33042/todo/dayList/month/select', {
+            const response = await fetch('http://15.164.226.28:4000/todo/dayList/month/select', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ const CalendarPage = () => {
                 'day_data': day
             });
     
-            const response = await fetch('http://kkms4001.iptime.org:33042/todo/dayList/select', {
+            const response = await fetch('http://15.164.226.28:4000/todo/dayList/select', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

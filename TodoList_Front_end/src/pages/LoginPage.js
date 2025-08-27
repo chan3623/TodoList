@@ -29,7 +29,7 @@ const LoginPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://kkms4001.iptime.org:33042/user/login', {
+            const response = await fetch('http://15.164.226.28:4000/user/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

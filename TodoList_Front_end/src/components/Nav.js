@@ -13,13 +13,15 @@ const Nav = () => {
 
     const handleLogout = async () => {
         try {
-            const response = await fetch('http://kkms4001.iptime.org:33042/user/logout', {
+	    console.log("logout click!!!");
+            const response = await fetch('http://15.164.226.28:4000/user/logout', {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 // body: JSON.stringify({ userId: user.id })
             });
+	    console.log("response : ", response);
             if (!response.ok) {
                 throw new Error('로그아웃에 실패했습니다.');
             }

@@ -141,7 +141,7 @@ class UserController {
     // 회원가입 요청
     join(req, res){
         const { user_email, user_pw, user_name, user_phone, user_birth } = req.body;
-        if (this.isEmail && this.isPhone) {
+        if (this.isEmail) {
             userModel.joinEmailAndPhoneCheck(user_email, (err, result) => {
                 if (err) {
                     console.log("이메일 중복 검사 도중 ERROR 발생 : ", err);
@@ -161,7 +161,7 @@ class UserController {
                 }
             });
         } else {
-            console.log("이메일 인증 또는 휴대폰 인증이 완료되지 않았습니다.");
+            console.log("이메일 인증이 완료되지 않았습니다.");
             res.send({ "emailPhoneCertification": false });
         }
     }

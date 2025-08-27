@@ -59,7 +59,7 @@ const LoginUtilPage = () => {
             return;
         }
         try {
-            const response = await fetch('http://kkms4001.iptime.org:33042/user/idFind', {
+            const response = await fetch('http://15.164.226.28:4000/user/idFind', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -95,7 +95,7 @@ const LoginUtilPage = () => {
             return;
         }
         try {
-            const response = await fetch('http://kkms4001.iptime.org:33042/user/pwFind', {
+            const response = await fetch('http://15.164.226.28:4000/user/pwFind', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

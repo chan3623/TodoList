@@ -15,7 +15,7 @@ class UserRouter {
         // 휴대폰 중복 확인
         this.router.post('/checkedPhone', userController.phoneCheck);
         // 휴대폰 인증번호 확인
-        this.router.post('/certificationPhone', userController.checkAuthenticationNumber);
+        // this.router.post('/certificationPhone', userController.checkAuthenticationNumber);
         // 로그인
         this.router.post('/login', userController.login);
         //로그아웃

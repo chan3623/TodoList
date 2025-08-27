@@ -26,7 +26,7 @@ const Home = () => {
     // 투두리스트를 서버에서 가져오는 함수
     const getTodos = async () => {
         try {
-            const response = await fetch('http://kkms4001.iptime.org:33042/todo/dayList/select', {
+            const response = await fetch('http://15.164.226.28:4000/todo/dayList/select', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -68,7 +68,7 @@ const Home = () => {
         }
         if (newTodo.trim()) {
             try {
-                const response = await fetch('http://kkms4001.iptime.org:33042/todo/dayList/add', {
+                const response = await fetch('http://15.164.226.28:4000/todo/dayList/add', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -107,7 +107,7 @@ const Home = () => {
         if (!todoToDelete) return;
     
         try {
-            const response = await fetch('http://kkms4001.iptime.org:33042/todo/dayList/delete', {
+            const response = await fetch('http://15.164.226.28:4000/todo/dayList/delete', {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
@@ -151,7 +151,7 @@ const Home = () => {
         if (!todoToDelete) return;
         if (editingText.trim()) { // 수정하려는 내용이 있는지 확인
             try {
-                const response = await fetch('http://kkms4001.iptime.org:33042/todo/dayList/update', {
+                const response = await fetch('http://15.164.226.28:4000/todo/dayList/update', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -190,7 +190,7 @@ const Home = () => {
     const handleCheckboxChange = async(id, currentStatus) => {
         const newStatus = !currentStatus;
         try {
-            const response = await fetch('http://kkms4001.iptime.org:33042/todo/dayList/checkUpdate', {
+            const response = await fetch('http://15.164.226.28:4000/todo/dayList/checkUpdate', {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

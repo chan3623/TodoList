@@ -109,12 +109,12 @@ const JoinPage = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        if (!emailCertification || !phoneCertification || !userEmail || !userPassword || !userName || !userPhone || !userBirth) {
+        if (!emailCertification || !userEmail || !userPassword || !userName || !userPhone || !userBirth) {
             alert('모든 정보를 입력하고 인증해주세요.');
             return;
         }
         try {
-            const response = await fetch('http://kkms4001.iptime.org:33042/user/join', {
+            const response = await fetch('http://15.164.226.28:4000/user/join', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -140,7 +140,7 @@ const JoinPage = () => {
     const handleCheckedEmail = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch(`http://kkms4001.iptime.org:33042/user/checkedEmail`, {
+            const response = await fetch(`http://15.164.226.28:4000/user/checkedEmail`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -169,7 +169,7 @@ const JoinPage = () => {
     const handleCheckedEmailCertificationNumber = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch(`http://kkms4001.iptime.org:33042/user/certificationEmail`, {
+            const response = await fetch(`http://15.164.226.28:4000/user/certificationEmail`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -195,7 +195,7 @@ const JoinPage = () => {
     const handleCheckedPhone = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch(`http://kkms4001.iptime.org:33042/user/checkedPhone`, {
+            const response = await fetch(`http://15.164.226.28:4000/user/checkedPhone`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -218,10 +218,10 @@ const JoinPage = () => {
         }
     };
 
-    const handleCheckedPhoneCertificationNumber = async (e) => {
+    /* const handleCheckedPhoneCertificationNumber = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch(`http://kkms4001.iptime.org:33042/user/certificationPhone`, {
+            const response = await fetch(`http://15.164.226.28:4000/user/certificationPhone`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -243,7 +243,7 @@ const JoinPage = () => {
             console.error('인증 오류 : ', error.message);
         }
     };
-
+    */
     const closeModal = () => {
         setShowModal(false);
     };
@@ -346,16 +346,16 @@ const JoinPage = () => {
                                 value={userPhone} 
                                 onChange={handleUserPhoneChange}
                             ></input>
-                            <button 
+	                   {/* <button 
                                 type="button" 
                                 className="input-btn" 
                                 onClick={handleCheckedPhone}
                                 disabled={!isPhoneValid}
-                            >인증</button>
+                            >인증</button> */}
                         </div>
                     </div>
                     {phoneError && <p className="error-message">{phoneError}</p>}
-                    <div className="join-list">
+	            {/* <div className="join-list">
                         <div className="join-icon security-icon"></div>
                         <div className="join-input-container">
                             <input 
@@ -366,14 +366,14 @@ const JoinPage = () => {
                                 value={phoneCertification} 
                                 onChange={handlePhoneCertificationChange}
                             ></input>
-                            <button 
+	                    <button 
                                 type="button" 
                                 className="input-btn" 
                                 onClick={handleCheckedPhoneCertificationNumber} 
                                 disabled={!isPhoneCertificationValid}
                             >확인</button>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="join-list">
                         <div className="join-icon birth-icon"></div>
                         <div className="join-input-container">

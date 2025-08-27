@@ -63,7 +63,7 @@ const ChangePw = () => {
                 throw new Error('새 비밀번호가 일치하지 않습니다.');
             }
 
-            const response = await fetch('http://kkms4001.iptime.org:33042/user/pwChange', {
+            const response = await fetch('http://15.164.226.28:4000/user/pwChange', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

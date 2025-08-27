@@ -50,7 +50,7 @@ const CategoryPage = () => {
 
     const getTodos = async () => {
         try {
-            const response = await fetch(`http://kkms4001.iptime.org:33042/todo/categoryList/${user.user.user_email}`, {
+            const response = await fetch(`http://15.164.226.28:4000/todo/categoryList/${user.user.user_email}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ const CategoryPage = () => {
 
     const getTodoList = async (categoryId) => {
         try {
-            const response = await fetch(`http://kkms4001.iptime.org:33042/todo/categoryData/${user.user.user_email}`, {
+            const response = await fetch(`http://15.164.226.28:4000/todo/categoryData/${user.user.user_email}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -122,7 +122,7 @@ const CategoryPage = () => {
                 category_name: newCategoryTitle,
             };
             try {
-                const response = await fetch('http://kkms4001.iptime.org:33042/todo/categoryList/add', {
+                const response = await fetch('http://15.164.226.28:4000/todo/categoryList/add', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -160,7 +160,7 @@ const CategoryPage = () => {
                 category_ChangeName: editingCategoryTitle,
             };
             try {
-                const response = await fetch('http://kkms4001.iptime.org:33042/todo/categoryList/update', {
+                const response = await fetch('http://15.164.226.28:4000/todo/categoryList/update', {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json'
@@ -191,7 +191,7 @@ const CategoryPage = () => {
 
     const deleteCategory = async (id) => {
         try {
-            const response = await fetch('http://kkms4001.iptime.org:33042/todo/categoryList/delete', {
+            const response = await fetch('http://15.164.226.28:4000/todo/categoryList/delete', {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'
@@ -225,7 +225,7 @@ const CategoryPage = () => {
                 category_data: title,
             };
             try {
-                const response = await fetch('http://kkms4001.iptime.org:33042/todo/categoryData/add', {
+                const response = await fetch('http://15.164.226.28:4000/todo/categoryData/add', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -266,7 +266,7 @@ const CategoryPage = () => {
                 category_ChangeData: editingListItemText,
             };
             try {
-                const response = await fetch(`http://kkms4001.iptime.org:33042/todo/categoryData/update`, {
+                const response = await fetch(`http://15.164.226.28:4000/todo/categoryData/update`, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json'
@@ -297,7 +297,7 @@ const CategoryPage = () => {
 
     const deleteListItem = async (categoryId, itemId) => {
         try {
-            const response = await fetch(`http://kkms4001.iptime.org:33042/todo/categoryData/delete`, {
+            const response = await fetch(`http://15.164.226.28:4000/todo/categoryData/delete`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'
@@ -343,7 +343,7 @@ const CategoryPage = () => {
         });
         setCategories(updatedCategories);
         try {
-            const response = await fetch(`http://kkms4001.iptime.org:33042/todo/categoryData/checkUpdate`, {
+            const response = await fetch(`http://15.164.226.28:4000/todo/categoryData/checkUpdate`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
